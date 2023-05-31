@@ -17,7 +17,7 @@ export const BoxContent=styled.div`
 padding:100px 12px;
 display: flex;
 background-color: #FFF;
-box-shadow: 0 0 5px #000;
+//box-shadow: 0 0 5px #000;
 flex-direction: column;
 `
 

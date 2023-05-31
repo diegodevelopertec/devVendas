@@ -15,9 +15,9 @@ export const CardProduct=({product}:props)=>{
 
 
   const setProductToPage=()=>{
-
-    setShareProduct(product)
-    Navigate(`/products/${product.id}`)
+      setShareProduct(product)
+      Navigate(`/products/${product.id}`)
+ 
   }
 
 

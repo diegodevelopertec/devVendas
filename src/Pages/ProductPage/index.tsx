@@ -9,13 +9,17 @@ import { ProductType } from "../../types/product"
 
 
 export const ProductPage=()=>{
-    const {shareProduct}=useGlobalContext()
+    const {shareProduct,user}=useGlobalContext()
    const dispacth=useDispatch()
 
 
 const setProductToCart=(product:ProductType)=>{
-    dispacth(addProductCart(product))
-    toast.success('Adicionado ao carrinho')
+    if(user !== null){
+        dispacth(addProductCart(product))
+        toast.success('Adicionado ao carrinho')
+    }else{
+        toast.error('Ops!Voce não tem uma conta')
+    }
 }
 
     return <Box>

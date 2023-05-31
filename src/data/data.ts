@@ -9,7 +9,7 @@ export const data=[
     qdt: 1,
     name: 'Xiaomi Redmi Note 11 Pro+ 5G 8GB 256GB Star Blue - Azul',
     marca:'xiaomi',
-    image: './../../src/assets/imgs/cel1.png',
+    image: '/src/assets/imgs/cel1.png',
     images: [] 
 },
 {  id: 2,
@@ -18,7 +18,7 @@ export const data=[
     qdt: 1,
     name: 'Smartphone Samsung Galaxy A34 5g Dual 128 Gb Preto 6 Gb Ram',
     marca:'samsung',
-    image: './../../src/assets/imgs/cel1.png',
+    image: '/src/assets/imgs/cel1.png',
     images: [] 
 },
 {
@@ -28,7 +28,7 @@ export const data=[
     qdt: 1,
     name: 'Moto G22 Dual SIM 128 GB cosmic black 4 GB RAM',
     marca:'motorola',
-    image: './../../src/assets/imgs/cel3.png',
+    image: '/src/assets/imgs/cel3.png',
     images: [] 
 },
 { id:4,
@@ -37,7 +37,7 @@ export const data=[
     qdt: 1,
     name: 'Cadeira de escritório Mymax MX12 gamer ergonômica preta com estofado de couro sintético',
     marca:'MX12',
-    image: './../../src/assets/imgs/cadeira1.png',
+    image: '/src/assets/imgs/cadeira1.png',
     images: [] 
 },
 { 
@@ -47,7 +47,7 @@ export const data=[
     qdt: 1,
     name: 'Cadeira de escritório Mymax MX12 gamer ergonômica preto e azul com estofado de couro sintéticoM',
     marca:'samsung',
-    image: './../../src/assets/imgs/cadeira2.png',
+    image: '/src/assets/imgs/cadeira2.png',
     images: [] 
 },
 {
@@ -57,7 +57,7 @@ export const data=[
     qdt: 1,
     name: 'Cadeira Gamer Havit Gc932 - Pink / White Rosa',
     marca:'motorola',
-    image: './../../src/assets/imgs/cadeira3.png',
+    image: '/src/assets/imgs/cadeira3.png',
     images: [] 
 },
 { id: 7,
@@ -66,7 +66,7 @@ export const data=[
     qdt: 1,
     name: 'Xiaomi Redmi Note 11 Pro+ 5G 8GB 256GB Star Blue - Azul',
     marca:'xiaomi',
-    image: './../../src/assets/imgs/cel1.png',
+    image: '/src/assets/imgs/cel1.png',
     images: [] 
 },
 {   id: 8,
@@ -75,7 +75,7 @@ export const data=[
     qdt: 1,
     name: 'Smartphone Samsung Galaxy A34 5g Dual 128 Gb Preto 6 Gb Ram',
     marca:'samsung',
-    image: './../../src/assets/imgs/cel1.png',
+    image: '/src/assets/imgs/cel1.png',
     images: [] 
 },
 {
@@ -85,7 +85,7 @@ export const data=[
     qdt: 1,
     name: 'Moto G22 Dual SIM 128 GB cosmic black 4 GB RAM',
     marca:'motorola',
-    image: './../../src/assets/imgs/cel3.png',
+    image: '/src/assets/imgs/cel3.png',
     images: [] 
 },
 { id:10,
@@ -94,7 +94,7 @@ export const data=[
     qdt: 1,
     name: 'Cadeira de escritório Mymax MX12 gamer ergonômica preta com estofado de couro sintético',
     marca:'MX12',
-    image: './../../src/assets/imgs/cadeira1.png',
+    image: '/src/assets/imgs/cadeira1.png',
     images: [] 
 },
 { 
@@ -104,7 +104,7 @@ export const data=[
     qdt: 1,
     name: 'Cadeira de escritório Mymax MX12 gamer ergonômica preto e azul com estofado de couro sintéticoM',
     marca:'samsung',
-    image: './../../src/assets/imgs/cadeira2.png',
+    image: '/src/assets/imgs/cadeira2.png',
     images: [] 
 },
 {
@@ -114,7 +114,37 @@ export const data=[
     qdt: 1,
     name: 'Cadeira Gamer Havit Gc932 - Pink / White Rosa',
     marca:'motorola',
-    image: './../../src/assets/imgs/cadeira3.png',
+    image: '/src/assets/imgs/cadeira3.png',
+    images: [] 
+},
+{
+    id: 13,
+    category: 'Hardware',
+    price:960,
+    qdt: 1,
+    name: 'Kit Upgrade Gamer - Intel Core I7 3.8ghz + H61 + 8gb De Ram',
+    marca:'intel',
+    image: '/src/assets/imgs/pcMae1.png',
+    images: [] 
+},
+{
+    id: 14,
+    category: 'Hardware',
+    price:459,
+    qdt: 1,
+    name: 'Placa Mãe Micro Atx Pcware Intel Ipmh310g 1151 Vga Hdmi Ddr4',
+    marca:'intel',
+    image: '/src/assets/imgs/pcMae2.png',
+    images: [] 
+},
+{
+    id: 15,
+    category: 'Hardware',
+    price:459,
+    qdt: 1,
+    name: 'Placa Mãe 1151 H110 Ddr4- I3, I5 E I7 - 6º E 7º Geração',
+    marca:'intel',
+    image: '/src/assets/imgs/pcMae3.png',
     images: [] 
 }
 ]

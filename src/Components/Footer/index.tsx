@@ -2,7 +2,7 @@ import { Box, BoxContent } from "./style"
 import { Link } from "react-router-dom"
 
 export const Footer=()=>{
-    return <Box>
+    return <Box id="footer">
          <BoxContent>
             <div className="cx-content">
                <h2>Sobre Nós</h2>

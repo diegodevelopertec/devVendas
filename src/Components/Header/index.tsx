@@ -30,8 +30,7 @@ export const Header=()=>{
                 </div>
                 <Link to={'/'} onClick={()=>setMenuMobile(false)} >Inicio</Link>
                 <Link to={'/products'} onClick={()=>setMenuMobile(false)} >Produtos</Link>
-                <Link to={'/sobre'} onClick={()=>setMenuMobile(false)} >Sobre</Link>
-                <Link to={'/footer'} onClick={()=>setMenuMobile(false)} >Contatos</Link>
+                <a href={'#footer'} onClick={()=>setMenuMobile(false)} >Sobre</a>
                 {
                     user == null && <>
                      <Link to={'/login'}>Entrar</Link>
@@ -40,7 +39,7 @@ export const Header=()=>{
                 {
                     user !== null && <>
                      <Link to={'/cart'}>Carrinho</Link>
-                     <Link to={'/login'}>Conta</Link>
+                     <Link to={'/account'}>Conta</Link>
                     </>
                 }
             </nav>
