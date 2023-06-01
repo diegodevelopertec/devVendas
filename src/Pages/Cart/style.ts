@@ -73,7 +73,7 @@ width: 100%;
 `
 
 export const ErrorCart=styled.div`
-color: #aaa;
+color: #000;
 font-size: 22px;
 padding: 30px;
 text-shadow: 0 0  4px #291F50;
@@ -91,13 +91,19 @@ margin: 45px 0;
     align-items: end;
     margin: 0 30px;
    button{
-    background-color: red;
+    background-color: #aaa;
     height: 60px;
     width: 160px;
-    background: #aaa;
+    color: #000;
     border: none;
+    box-shadow: 0 0  5px #000;
     cursor: pointer;
     border-radius: 3px;
+    color:#FFF ;
+    transition: all ease .3s;
+    &:hover{
+        background-color: #73141d;
+    }
    }
     
 }

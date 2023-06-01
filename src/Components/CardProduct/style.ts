@@ -5,6 +5,10 @@ export const Box=styled.div`
 box-shadow:0 0 12px #000;
 display: flex;
 flex-direction:column;
+
+@media screen and (max-width:800px) {
+    box-shadow:0 0 3px #000; 
+}
 `
 
 export const BoxTop=styled.div`
@@ -26,6 +30,8 @@ background-color: #34154f;
 h3{
     font-size: 15px;
     text-shadow: 0 0 5px #000;
+    height: 56px;
+    margin: 13px 0;
 }
 
 .cx-details{

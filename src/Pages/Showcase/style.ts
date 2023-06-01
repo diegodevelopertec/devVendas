@@ -1,11 +1,19 @@
 import styled from "styled-components";
 
+type Props={
+    stateCategory:boolean
+    
+}
+
 
 export const Box=styled.div`
 width: 100%;
 min-height: 100%;
 padding:  100px 0;
 margin-bottom: 100px;
+@media screen and (max-width:950px){
+   padding-top: 30px;
+}
 `
 
 export const BoxHeader=styled.div`
@@ -26,21 +34,7 @@ h2{
     .itens-categories{
         display: flex;
     }
-   .itens-categories span{
-        margin: 20px;
-        padding: 20px 15px;
-        width: 180px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        transition: all ease .3s;
-        &:hover{
-            cursor: pointer;
-            background-color: #34154f;
-            color: #FFF;
-            box-shadow:0 0 4px #000;
-        }
-    }
+   
 }
 
 @media screen  and (max-width:950px){
@@ -52,20 +46,43 @@ h2{
     .itens-categories{
         padding: 0;
         width: 100%;
-       
-         span{
+        span{
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 5px;
-            width:auto;
+            width:70px;
             height: auto;
-            padding: 12px;
+            padding:6px 12px;
             font-size: 11px;
          }
     }
 }
 `
+
+export const Category=styled.span<Props>`
+        margin: 20px;
+        padding: 20px 15px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: ${Props=>Props.stateCategory ? '#34154f' : ''};
+        color: ${Props=>Props.stateCategory ? '#FFF' : ''};
+        flex-direction: column;
+        align-items: center;
+        transition: all ease .3s;
+        &:hover{
+            cursor: pointer;
+            background-color: #34154f;
+            color: #FFF;
+            box-shadow:0 0 4px #000;
+        }
+
+`
+
+
+
 export const BoxProducts=styled.section`
 
 display: grid;

@@ -47,6 +47,7 @@ export const BoxRight=styled.div<Props>`
 
 }
 nav{
+  
    display:flex;
    align-items:center;
    .btn-top-close{

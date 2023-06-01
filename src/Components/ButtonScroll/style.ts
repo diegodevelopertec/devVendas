@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Button=styled.button`
 height: 70px;
+z-index: 2;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -20,4 +21,13 @@ img{
     width: 45px;
 }
 
+
+@media screen and (max-width:950px){
+    height: 45px;
+    width: 45px;
+    img{
+        height: 25px;
+        width: 25px;
+} 
+}
 `
