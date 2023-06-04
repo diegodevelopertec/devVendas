@@ -2,11 +2,14 @@ import { Box, BoxContent, BoxSection } from "./style"
 import User from './../../assets/icons/user.png'
 import pay from './../../assets/icons/pay.png'
 import address from './../../assets/icons/address.png'
-
+import { useGlobalContext } from "../../hooks/useGlobalContext"
+import { toast } from "react-toastify"
 
 
 
 export const AccountPage=()=>{
+
+
     return <Box>
         <BoxContent>
             <h2>Seus Dados</h2>

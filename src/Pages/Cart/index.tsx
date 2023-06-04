@@ -8,10 +8,16 @@ import { ErrorCart } from "./style"
 import {toast} from 'react-toastify'
 import { clearCart } from "../../Redux/slices/cartSlice"
 import { useDispatch } from "react-redux"
+import { useGlobalContext } from "../../hooks/useGlobalContext"
+import { useScrollToTop } from "../../hooks/useScrollToTop"
+
+
 
 export const CartPage=()=>{
     const {cart}=useGlobalRedux(state=>state)
-   const dispacth=useDispatch()
+    const {user}=useGlobalContext()
+     const dispacth=useDispatch()
+   
 
     const ClearProductsTheCart=()=>{    
         if(cart.totalCart === 0){
@@ -20,6 +26,16 @@ export const CartPage=()=>{
         }else{
             dispacth(clearCart())
             toast.success('Carrinho está vazio');
+        }
+    }
+
+
+    const setCartToRequest=()=>{
+        if(user == null ){
+            toast.error('Você ainda não tem uma conta')
+        }else{
+            dispacth(clearCart())
+            toast.success('Compra feita')
         }
     }
 
@@ -63,7 +79,7 @@ export const CartPage=()=>{
         </DataCart>
         <BoxButtons>
                <button onClick={ClearProductsTheCart}>Limpar</button>
-               {cart.productsCart.length > 0 && <button onClick={ClearProductsTheCart}>Finalizar compra</button>}
+               {cart.productsCart.length > 0 && <button onClick={setCartToRequest}>Finalizar compra</button>}
         </BoxButtons>
 
     </BoxPage>
