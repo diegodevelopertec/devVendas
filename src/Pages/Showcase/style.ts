@@ -39,6 +39,9 @@ h2{
 
 @media screen  and (max-width:950px){
     padding: 12px;
+    h2{
+        margin-bottom:50px;
+    }
     .categories{
         margin: 20px 0;
         flex-direction: column;

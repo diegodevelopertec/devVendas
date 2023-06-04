@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const BoxPage=styled.div`
-width: 100%;
 min-height: 100%;
 display: flex;
 flex-direction: column;
@@ -40,7 +39,7 @@ h2{
     padding: 30px 5px;
    
     h2{
-        font-size: 19px;
+        font-size: 22px;
         margin: 0;
         img{
             height: 45px;

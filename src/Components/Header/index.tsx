@@ -36,8 +36,8 @@ export const Header=()=>{
                 }
                 {
                     user !== null && <>
-                     <Link to={'/cart'}>Carrinho</Link>
-                     <Link to={'/account'}>Conta</Link>
+                     <Link to={'/cart'}  onClick={()=>setMenuMobile(false)} >Carrinho</Link>
+                     <Link to={'/account'}  onClick={()=>setMenuMobile(false)} >Conta</Link>
                     </>
                 }
                  <a href={'#footer'} onClick={()=>setMenuMobile(false)} >Sobre</a>
