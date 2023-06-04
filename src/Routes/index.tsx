@@ -8,10 +8,12 @@ import { Box } from "./style"
 import { Routes as Rotas,Route } from "react-router-dom"
 import { ButtonScroll } from "../Components/ButtonScroll"
 import { AccountPage } from "../Pages/Account"
-
+import { useEffect } from "react"
 
 
 export const Routes=()=>{
+   
+
     return  <Box>
         <Rotas>
             <Route path="/" element={<Home />}   />

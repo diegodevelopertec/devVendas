@@ -1,18 +1,31 @@
 import { useDispatch } from "react-redux"
 import { addProductCart } from "../../Redux/slices/cartSlice"
 import { useGlobalContext } from "../../hooks/useGlobalContext"
-import { useGlobalRedux } from "../../hooks/useGlobalRedux"
 import { Box,BoxAction,BoxContent } from "./style"
 import { toast } from 'react-toastify'
 import { ProductType } from "../../types/product"
+import { useEffect } from "react"
 
 
 
 export const ProductPage=()=>{
     const {shareProduct,user}=useGlobalContext()
-   const dispacth=useDispatch()
+    const dispacth=useDispatch()
 
+   useEffect(() => {
+    const { hash } = location;
+    const targetElement = hash ? document.querySelector(hash) : null;
 
+    if (targetElement) {
+      setTimeout(() => {
+        targetElement.scrollIntoView();
+      }, 100);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
+ 
 const setProductToCart=(product:ProductType)=>{
     if(user !== null){
         dispacth(addProductCart(product))

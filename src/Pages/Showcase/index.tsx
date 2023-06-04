@@ -12,7 +12,19 @@ export const Showcase=()=>{
     const [categoryActive,setCategoryActive]=useState(false)
     const [filter,setFilter]=useState<string>('')
     
-
+    useEffect(() => {
+        const { hash } = location;
+        const targetElement = hash ? document.querySelector(hash) : null;
+    
+        if (targetElement) {
+          setTimeout(() => {
+            targetElement.scrollIntoView();
+          }, 100);
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }, [location]);
+      
     useEffect(()=>{
         const filteresList=()=>{
           
@@ -25,11 +37,7 @@ export const Showcase=()=>{
                 setProducts(data)
             }
         }
-
         filteresList()
-       
-
-
     },[filter])
 
 

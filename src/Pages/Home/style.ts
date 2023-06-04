@@ -17,8 +17,11 @@ export const BoxContent=styled.div`
 padding:100px 12px;
 display: flex;
 background-color: #FFF;
-//box-shadow: 0 0 5px #000;
 flex-direction: column;
+
+@media screen and (max-width:950px) {
+  padding: 100px 0;
+}
 `
 
 export const BoxContentOne=styled.section`
@@ -55,6 +58,11 @@ a{
 @media screen and (max-width:950px){
   align-items:auto;
   width: 100%;
+  padding:auto 7px;
+  h2{
+    font-size: 19px;
+  }
+
 }
 `
 
@@ -75,9 +83,11 @@ padding: 40px;
 `
 
 export const BoxContentTwo=styled.section`
-margin: 100px 0;
+margin: 190px 0;
+padding: 200px 0;
+background-color:  #1d1233;;
 h2{
-  color: #3E395A;
+  color: #FFF;
   text-align: center;
   text-shadow:0 0 5px #aaa;
 }

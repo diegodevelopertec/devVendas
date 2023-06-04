@@ -10,7 +10,7 @@ import { CardProduct } from "../../Components/CardProduct"
 import { Link } from "react-router-dom"
 
 export const Home=()=>{
-    const [someProducts,setSomeProducts]=useState<ProductType[]>(data)
+    const [someProducts,setSomeProducts]=useState<ProductType[]>(data.filter(i=>i.id < 13))
 
     
     return <Box>
@@ -27,24 +27,16 @@ export const Home=()=>{
                         }
                     </BoxProducts>
 
-                <Link to=''>Ver Mais</Link>
+                <Link to='/products'>Ver Mais</Link>
 
             </BoxContentOne>
             <BoxContentTwo>
                 <h2>Aqui com A gente é :</h2>
                 <div className="cx-passos">
                    <div className="cx-passos-itens">
-                      <div>
-                        Logou
-                        <img src={LogoLogin} alt="" />
-
-                      </div>
-                      <div>Comprou
-                        <img src={LogoComprar} alt="" />
-                      </div>
-                      <div>Chegou
-                      <img src={LogoChegou} alt="" />
-                      </div>
+                      <div>Logou<img src={LogoLogin} alt="" /></div>
+                      <div>Comprou<img src={LogoComprar} alt="" /></div>
+                      <div>Chegou<img src={LogoChegou} alt="" /></div>
                    </div>
                 </div>
             </BoxContentTwo>

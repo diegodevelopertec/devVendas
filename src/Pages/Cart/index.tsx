@@ -1,4 +1,4 @@
-import { BoxContent, BoxPage, BoxProductsCart, DataCart } from "./style"
+import { BoxButtons, BoxContent, BoxPage, BoxProductsCart, DataCart } from "./style"
 import CartIcon from './../../assets/icons/cart.png'
 import { useGlobalRedux } from "../../hooks/useGlobalRedux"
 import { ProductType } from "../../types/product"
@@ -47,9 +47,6 @@ export const CartPage=()=>{
 
         </BoxProductsCart>
         <DataCart>
-            <div className="clear-cart">
-               <button onClick={ClearProductsTheCart}>Limpar</button>
-            </div>
             <div className="table-cart">
                 <div className="left">
                     <div className="col">Taxa Entrega</div>
@@ -62,7 +59,12 @@ export const CartPage=()=>{
                     <div className="col">R$ {cart.totalCart.toFixed(2)}</div>
                 </div>
             </div>
+
         </DataCart>
+        <BoxButtons>
+               <button onClick={ClearProductsTheCart}>Limpar</button>
+               {cart.productsCart.length > 0 && <button onClick={ClearProductsTheCart}>Finalizar compra</button>}
+        </BoxButtons>
 
     </BoxPage>
 }

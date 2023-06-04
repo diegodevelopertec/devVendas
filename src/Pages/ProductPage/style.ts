@@ -8,7 +8,8 @@ justify-content: center;
 flex-direction: column;
 color: #000;
 margin-bottom: 60px;
-
+height: max-content;
+padding: 100px 0;
 `
 export const BoxContent=styled.div`
 width: 80%;
