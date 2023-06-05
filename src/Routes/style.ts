@@ -6,5 +6,4 @@ display: flex;
 justify-content: center;
 color: #FFF;
 min-height: 800px;
-
 `

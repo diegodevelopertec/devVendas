@@ -19,6 +19,7 @@ display: flex;
 background-color: #FFF;
 flex-direction: column;
 
+
 @media screen and (max-width:950px) {
   padding: 100px 0;
 }

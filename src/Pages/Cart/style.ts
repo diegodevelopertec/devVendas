@@ -6,6 +6,7 @@ min-height: 100%;
 display: flex;
 flex-direction: column;
 padding: 180px 0;
+width: 100vw;
 
 @media screen and (max-width:950px) {
   padding: 10px 0;
@@ -14,17 +15,15 @@ padding: 180px 0;
 `
 
 export const BoxContent=styled.div`
-width: 80%;
+
 color: #000;
 margin: 30px;
 display: flex;
 flex-direction: column;
-
-
 h2{
     color:#0e0f12;
     display: flex;
-    margin: 0 35px;
+    margin: 20px  35px;
     align-items: center;
     text-shadow: 0 0 3px #000;
     img{
