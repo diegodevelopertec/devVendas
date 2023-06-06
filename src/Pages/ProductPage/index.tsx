@@ -29,7 +29,7 @@ export const ProductPage=()=>{
 const setProductToCart=(product:ProductType)=>{
     if(user !== null){
         dispacth(addProductCart(product))
-        toast.success('Adicionado ao carrinho')
+  
     }else{
         toast.error('Ops!Voce não tem uma conta')
     }

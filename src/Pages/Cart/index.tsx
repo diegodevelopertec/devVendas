@@ -9,7 +9,7 @@ import {toast} from 'react-toastify'
 import { clearCart } from "../../Redux/slices/cartSlice"
 import { useDispatch } from "react-redux"
 import { useGlobalContext } from "../../hooks/useGlobalContext"
-import { useScrollToTop } from "../../hooks/useScrollToTop"
+
 
 
 
@@ -52,7 +52,7 @@ export const CartPage=()=>{
 
             <div className="products-list">
                {cart.productsCart.length > 0 && cart.productsCart.map((i,k)=>(
-                    <CartProductCart product={i} />
+                    <CartProductCart product={i} key={k} />
                 ))}
                 {
                     cart.productsCart.length <= 0 && <ErrorCart>

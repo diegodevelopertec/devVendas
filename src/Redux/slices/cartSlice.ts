@@ -1,6 +1,8 @@
 import { ProductType } from "../../types/product"
 import { createSlice} from "@reduxjs/toolkit"
 import { PayloadAction } from "@reduxjs/toolkit/dist/createAction"
+import { ProductPage } from "../../Pages/ProductPage"
+import { toast } from "react-toastify"
 
 
 type CartType={
@@ -16,8 +18,18 @@ export const Cart=createSlice({
     },
     reducers:{
         addProductCart:(state,action:PayloadAction<ProductType>)=>{
-           state.productsCart.unshift(action.payload)
-           state.totalCart+=action.payload.price
+            let productPay=state.productsCart.find(i=>i.id === action.payload.id)
+    
+           if(productPay){
+               productPay.qdt++,
+               productPay.price+=action.payload.price
+                state.totalCart+=action.payload.price
+                
+           }else{
+                state.productsCart.unshift(action.payload)
+                state.totalCart+=action.payload.price
+                toast.success('adicionado ao carrinho')
+           }
         },
         removeProductCart:(state,action:PayloadAction<number>)=>{
              let product=state.productsCart.find(i=>i.id === action.payload)
